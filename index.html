@@ -1,0 +1,292 @@
+<!-- 이 파일의 문서 타입은 HTML5 -->
+<!-- 과거: HTML이 따라야 하는 규칙에 대한 링크 -->
+<!-- 현재: 관습적으로 포함해야 하는 것 -->
+<!DOCTYPE html>
+<!-- html: 페이지 최상위(root) 요소 -->
+<!-- lang: 요소의 언어 정의 for SEO, 접근성 -->
+<html lang="ko">
+  <!-- 메타데이터; SEO, CSS&JS 연결 등 -->
+  <head>
+    <!-- 이 문서의 문자 인코딩 방법은 UTF-8 -->
+    <!-- 거의 모든 문자를 표현 => 페이지가 나타낼 만한 어떤 문자든 처리 -->
+    <!-- HTML5에서 유효한 유일한 인코딩 -->
+    <!-- 문서의 처음부터 1024바이트 내에 위치해야 함 -->
+    <meta charset="UTF-8" />
+    <!-- IE 브라우저를 위한 설정 -->
+    <!-- 최신 버전의 렌더링 엔진 사용 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 모바일 브라우저를 위한 설정 -->
+    <!-- 뷰포트 너비 = 디바이스 너비, 문서 스케일 = 100% -->
+    <!-- 고정된 기본값(980px)을 오버라이딩함으로써 미디어쿼리 등의 작동에 문제 방지 -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>HOLIZET</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <meta name="author" content="이현지" />
+    <meta name="description" content="HTML+CSS 연습장" />
+    <!-- OG -->
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="HOLIZET" />
+    <meta property="og:description" content="HTML+CSS 연습장" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0ce04dd2fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="header__logo">HOLIZET</a>
+      <ul class="header__menu">
+        <li><a href="#" class="header__menu-item">new</a></li>
+        <li><a href="#" class="header__menu-item">outer</a></li>
+        <li><a href="#" class="header__menu-item">top</a></li>
+        <li><a href="#" class="header__menu-item">bottom</a></li>
+      </ul>
+      <ul class="header__links">
+        <li>
+          <a href="#" class="header__link">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__link">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__link">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <h1 class="title">new</h1>
+      <div class="total-and-select">
+        <span class="total">Total 10</span>
+        <select class="select">
+          <option value="">등록일</option>
+          <option value="">낮은가격</option>
+          <option value="">높은가격</option>
+        </select>
+      </div>
+      <ul class="products">
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__container">
+            <img
+              src="https://cafe24.poxo.com/ec01/colizet/YepDBcpQi6F1EGuL9rzRwTN0MvGLRhbV/dkY5Webc8HIBXNsNJKUvRm+PSE/5OK81fzwgr2P7xfzgtOcFGyYfQ==/_/web/product/small/202411/da0ce586247593774e60166d29c9765d.png"
+              alt="제품1"
+              class="product__img"
+            />
+            <ul class="products__btns">
+              <li><button class="product__btn">WISH</button></li>
+              <li><button class="product__btn">ADD</button></li>
+            </ul>
+          </div>
+          <div class="product__metadata">
+            <p class="product__title">Lorem</p>
+            <p class="product__price">100,000</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__icons">
+        <li>
+          <a href="#" class="footer__icon"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <button class="footer__icon footer__toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </li>
+        <li>
+          <a href="#" class="footer__icon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="footer__icon"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="footer__icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
